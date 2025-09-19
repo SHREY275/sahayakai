@@ -1,0 +1,71 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* SIH 2025 PM Internship Portal Design System - Warm Professional Theme */
+
+@layer base {
+  :root {
+    /* Warm Government-Friendly Color Palette */
+    --background: 42 15% 98%;
+    --foreground: 20 14% 15%;
+    
+    /* Primary - Warm Orange for CTAs and highlights */
+    --primary: 22 82% 58%;
+    --primary-light: 22 82% 68%;
+    --primary-dark: 22 82% 48%;
+    
+    /* Secondary - Deep Maroon for headers and emphasis */
+    --secondary: 0 45% 35%;
+    --secondary-light: 0 45% 45%;
+    
+    /* Accent - Warm Beige for sections and cards */
+    --accent: 42 25% 88%;
+    --accent-light: 42 25% 92%;
+    
+    /* Neutral tones */
+    --muted: 42 15% 94%;
+    --muted-foreground: 20 8% 45%;
+    
+    /* Status colors */
+    --success: 142 76% 36%;
+    --warning: 38 92% 50%;
+    --destructive: 0 84% 60%;
+    
+    /* Interactive elements */
+    --border: 42 20% 85%;
+    --input: 42 20% 90%;
+    --ring: 22 82% 58%;
+    
+    /* Card and surface colors */
+    --card: 0 0% 100%;
+    --card-foreground: 20 14% 15%;
+    
+    --popover: 0 0% 100%;
+    --popover-foreground: 20 14% 15%;
+    
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(22 82% 58%), hsl(22 82% 68%));
+    --gradient-hero: linear-gradient(135deg, hsl(22 82% 58%), hsl(0 45% 35%));
+    --gradient-section: linear-gradient(180deg, hsl(42 25% 96%), hsl(42 25% 92%));
+    
+    /* Shadows */
+    --shadow-soft: 0 2px 10px -2px hsl(22 82% 58% / 0.1);
+    --shadow-medium: 0 4px 20px -4px hsl(22 82% 58% / 0.15);
+    --shadow-strong: 0 8px 30px -8px hsl(22 82% 58% / 0.2);
+    
+    /* Typography */
+    --font-heading: 'Playfair Display', serif;
+    --font-body: 'Poppins', sans-serif;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
